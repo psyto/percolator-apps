@@ -9,14 +9,14 @@ export {
   parseAllAccounts,
   parseUsedIndices,
   AccountKind,
-} from '../../../percolator-cli/src/solana/slab';
+} from '../../../../percolator-cli/src/solana/slab';
 export type {
   SlabHeader,
   MarketConfig,
   EngineState,
   RiskParams,
   Account,
-} from '../../../percolator-cli/src/solana/slab';
+} from '../../../../percolator-cli/src/solana/slab';
 
 // Re-export instruction encoders (depends on @solana/web3.js + local encode.ts)
 export {
@@ -24,10 +24,10 @@ export {
   encodeDepositCollateral,
   encodeWithdrawCollateral,
   encodeTradeNoCpi,
-} from '../../../percolator-cli/src/abi/instructions';
+} from '../../../../percolator-cli/src/abi/instructions';
 
 // Re-export PDA derivation (only depends on @solana/web3.js)
-export { deriveVaultAuthority } from '../../../percolator-cli/src/solana/pda';
+export { deriveVaultAuthority } from '../../../../percolator-cli/src/solana/pda';
 
 // ---------------------------------------------------------------------------
 // Inlined from percolator-cli/src/abi/accounts.ts to avoid @solana/spl-token
